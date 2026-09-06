@@ -142,5 +142,53 @@
     "bio": "Desk neighbor at work, now good friends outside it too.",
     "goal": 10,
     "next_due_date": "2025-07-17"
+  },
+  {
+    "id": 13,
+    "name": "Ryan Thompson",
+    "picture": "https://randomuser.me/api/portraits/men/9.jpg",
+    "email": "ryan.t@example.com",
+    "days_since_contact": 40,
+    "status": "overdue",
+    "tags": ["roommate"],
+    "bio": "Shared an apartment for three years, still trade recipes.",
+    "goal": 21,
+    "next_due_date": "2025-06-28"
+  },
+  {
+    "id": 14,
+    "name": "Fatima Al-Sayed",
+    "picture": "https://randomuser.me/api/portraits/women/77.jpg",
+    "email": "fatima.a@example.com",
+    "days_since_contact": 4,
+    "status": "on_track",
+    "tags": ["work", "gym buddy"],
+    "bio": "Coworker who convinced me to start running.",
+    "goal": 10,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 15,
+    "name": "Ben Foster",
+    "picture": "https://randomuser.me/api/portraits/men/43.jpg",
+    "email": "ben.foster@example.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["childhood friend", "neighbor"],
+    "bio": "Used to build treehouses together as kids.",
+    "goal": 14,
+    "next_due_date": "2025-07-09"
+  },
+  {
+    "id": 16,
+    "name": "Olivia Brooks",
+    "picture": "https://randomuser.me/api/portraits/women/90.jpg",
+    "email": "olivia.b@example.com",
+    "days_since_contact": 0,
+    "status": "on_track",
+    "tags": ["close friend", "book club"],
+    "bio": "Best friend from high school, still texts every day.",
+    "goal": 7,
+    "next_due_date": "2025-07-23"
   }
 ]
