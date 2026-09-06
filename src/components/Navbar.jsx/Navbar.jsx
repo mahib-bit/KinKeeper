@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const Navbar = () => {
     const lists = <>
         <Link to='/'><li><button><House></House> Home</button></li></Link>
-        <li><button><ClockFading></ClockFading> Timeline</button></li>
+        <Link to='/timeline'><li><button><ClockFading></ClockFading> Timeline</button></li></Link>
         <li><button><ChartLine></ChartLine> Stats</button></li>
     </>
 
