@@ -32,14 +32,7 @@ const Timeline = () => {
         }
     };
 
-    const formatDate = (isoString) => {
-        const date = new Date(isoString);
-        return date.toLocaleDateString('en-US', {
-            month: 'long',
-            day: 'numeric',
-            year: 'numeric'
-        });
-    };
+    const formatDate = (isoString) => new Date(isoString).toLocaleDateString();
 
     const filteredLogs = filter === 'All' 
         ? timelineLogs 
