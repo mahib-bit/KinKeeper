@@ -5,27 +5,33 @@ import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import Home from '../pages/Home/Home';
 import KinDetails from '../pages/KinDetails/KinDetails';
 import Timeline from '../pages/Timeline/Timeline';
+import Stats from '../pages/Stats/Stats';
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component : Root,
-    errorElement : <ErrorPage></ErrorPage>,
-    children : [
+    Component: Root,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
       {
-          index : true,
-          loader: () => fetch('/public/kinData.json'),
-          Component : Home,
+        index: true,
+        loader: () => fetch('/public/kinData.json'),
+        Component: Home,
       },
       {
-        path : 'kinDetails/:id',
+        path: 'kinDetails/:id',
         loader: () => fetch('/public/kinData.json'),
-        Component : KinDetails,
+        Component: KinDetails,
       },
       {
-        path : 'timeline',
+        path: 'timeline',
         loader: () => fetch('/public/kinData.json'),
-        Component : Timeline,
+        Component: Timeline,
+      },
+      {
+        path: 'stats',
+        loader: () => fetch('/public/kinData.json'),
+        Component: Stats,
       }
     ]
   },
