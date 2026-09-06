@@ -13,12 +13,12 @@ export const router = createBrowserRouter([
     children : [
       {
           index : true,
-          path : '/',
-          loader: () => fetch('kinData.json'),
+          loader: () => fetch('/public/kinData.json'),
           Component : Home,
       },
       {
-        path : '/kinDetails',
+        path : 'kinDetails/:id',
+        loader: () => fetch('/public/kinData.json'),
         Component : KinDetails,
       }
     ]
