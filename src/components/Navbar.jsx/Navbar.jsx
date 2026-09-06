@@ -1,9 +1,10 @@
 import { ChartLine, ClockFading, House } from 'lucide-react';
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const lists = <>
-        <li><button><House></House> Home</button></li>
+        <Link to='/'><li><button><House></House> Home</button></li></Link>
         <li><button><ClockFading></ClockFading> Timeline</button></li>
         <li><button><ChartLine></ChartLine> Stats</button></li>
     </>
@@ -23,7 +24,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <h1 className='text-3xl font-bold text-green-800'><span className='text-green-700 font-extrabold'>Kin</span>Keeper</h1>
+                    <Link to='/'><h1 className='text-3xl font-bold text-green-800'><span className='text-green-700 font-extrabold'>Kin</span>Keeper</h1></Link>
                 </div>
                 <div className="navbar-center hidden md:flex lg:flex">
                     <ul className="menu menu-horizontal px-1">
