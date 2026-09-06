@@ -13,6 +13,7 @@ export const router = createBrowserRouter([
       {
           index : true,
           path : '/',
+          loader: () => fetch('kinData.json'),
           Component : Home,
       }
     ]
