@@ -4,8 +4,12 @@ const Kin = ({ kin }) => {
     const { picture, name, tags , status, days_since_contact } = kin;
 
     const statusStyle = (status) => {
-        if (status === 'on_track') return 'bg-green-700 hover:bg-green-800 text-white border-none';
-        if (status === 'overdue') return 'bg-red-600 hover:bg-red-700 text-white border-none';
+        if (status === 'on_track') 
+            return 'bg-green-700 hover:bg-green-800 text-white border-none';
+        if (status === 'overdue') 
+            return 'bg-red-600 hover:bg-red-700 text-white border-none';
+        if (status === 'almost_overdue') 
+            return 'bg-yellow-600 hover:bg-yellow-700 text-white border-none';
     };
 
     return (
