@@ -1,4 +1,3 @@
-app.jsx
 import './App.css'
 
 function App() {
